@@ -12,22 +12,38 @@
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Rickard Pedersen</a>
+        <a class="navbar-brand" id="landing-button" href="#">Rickard Pedersen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link active" href="#">Om mig<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Utbildning</a>
-                <a class="nav-item nav-link" href="#">Arbetslivserfarenhet</a>
-                <a class="nav-item nav-link" href="#">Portfolio</a>
+                <a class="nav-item nav-link" id="about-button">Om mig<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" id="education-button">Utbildning</a>
+                <a class="nav-item nav-link" id="work-button">Arbetslivserfarenhet</a>
+                <a class="nav-item nav-link" id="portfolio-button">Portfolio</a>
             </div>
         </div>
     </nav>
 
-    <div id="portfolio" class="d-none">
+    <div id="landing" class="pages">
+        Landing
+    </div>
+
+    <div id="about" class="pages d-none">
+        Om mig
+    </div>
+
+    <div id="education" class="pages d-none">
+        Utbildning
+    </div>
+
+    <div id="work" class="pages d-none">
+        Arbetslivserfarenhet
+    </div>
+
+    <div id="portfolio" class="pages d-none">
         <div class="row p-3">
             <div class="card col-sm m-3" style="width: 18rem;">
                 <img class="card-img-top" src="http://placekitten.com/100/100" alt="Card image cap">
