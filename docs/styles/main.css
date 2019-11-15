@@ -1,3 +1,17 @@
+.accordion .octicon {
+  float: right;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+.flipImage {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+}
+
 /*
 $danger: white;
 

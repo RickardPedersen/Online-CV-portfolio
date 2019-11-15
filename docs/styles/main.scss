@@ -1,4 +1,14 @@
+.accordion {
+    .octicon {
+        float: right;
+        font-size: 2rem;
+        transition: transform 250ms;
+    }
+}
 
+.flipImage {
+    transform: rotateX(180deg);
+}
 
 /*
 $danger: white;

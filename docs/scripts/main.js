@@ -1,43 +1,30 @@
-$(function() {
-    //Navbar links
-
-    //Landing
-    $("#landing-button").on("click", function() {
+$(function () {
+    /*Navbar*/
+    //Adds eventlisteners for navigation in the navbar
+    $(".navbar-brand, .nav-link").on("click", function () {
         $(".active").removeClass("active");
         $(this).addClass("active");
         $(".pages").addClass("d-none");
-        $("#landing").removeClass("d-none");
+        $("#" + this.id.split("-")[0] + "-page").removeClass("d-none");
     });
+    /*End of navbar*/
 
-    //About
-    $("#about-button").on("click", function() {
-        $(".active").removeClass("active");
-        $(this).addClass("active");
-        $(".pages").addClass("d-none");
-        $("#about").removeClass("d-none");
-    });
+    /*Landing page*/
+    /*End of landing page*/
 
-    //Education
-    $("#education-button").on("click", function() {
-        $(".active").removeClass("active");
-        $(this).addClass("active");
-        $(".pages").addClass("d-none");
-        $("#education").removeClass("d-none");
-    });
+    /*About page page*/
+    /*End of about page*/
 
-    //Work
-    $("#work-button").on("click", function() {
-        $(".active").removeClass("active");
-        $(this).addClass("active");
-        $(".pages").addClass("d-none");
-        $("#work").removeClass("d-none");
+    /*Education page*/
+    //Accordion event listeners
+    $(".accordion .card").on("click", function () {
+        //Slide down/up effect
+        $(this).children(".collapse").slideToggle(250);
+        //Flips the arrow icon
+        $(this).find(".octicon").toggleClass("flipImage");
     });
+    /*End of education page*/
 
-    //Portfolio
-    $("#portfolio-button").on("click", function() {
-        $(".active").removeClass("active");
-        $(this).addClass("active");
-        $(".pages").addClass("d-none");
-        $("#portfolio").removeClass("d-none");
-    });
+    /*Work page*/
+    /*End of work page*/
 });
