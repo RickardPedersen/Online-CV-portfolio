@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CV</title>
-
+    <!--
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/octicons/4.4.0/font/octicons.css"
         integrity="sha384-C6kA+suKgaatnWkU9uhGHhB10Ab39Z4uMZ4oTM6qqZHZMTr9lsXm6MdhclSI4Wk2" crossorigin="anonymous">
+
+-->
+    <script src="https://kit.fontawesome.com/905c2f0b88.js"
+        integrity="sha384-tCIa9x35rFwAnPYwDCoqImEiB9Ai31jfzeslK4Q53KZAXSFi24Px912eIpefo9Bj" crossorigin="anonymous">
+    </script>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
@@ -22,23 +27,31 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" id="about-button">Om mig<span class="sr-only">(current)</span></a>
+                
                 <a class="nav-item nav-link" id="education-button">Utbildning</a>
                 <a class="nav-item nav-link" id="work-button">Arbetslivserfarenhet</a>
                 <a class="nav-item nav-link" id="portfolio-button">Portfolio</a>
+                <a class="nav-item nav-link" id="contact-button">Kontakt</a>
             </div>
         </div>
     </nav>
 
     <div id="landing-page" class="pages d-none">
-        Landing
+        <h1>Välkommen till min sida!</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium malesuada nisi, sed accumsan urna
+            ornare lacinia. Aenean lacinia, massa at tristique mollis, sem turpis faucibus ex, eu porta nibh nisi non
+            nulla. Nulla a vulputate lacus, eu bibendum nisl. Curabitur ultricies lectus urna, eu scelerisque enim porta
+            id. Suspendisse dictum vestibulum urna. Donec rutrum at urna sit amet mollis. Suspendisse diam dolor,
+            pretium sed bibendum vitae, condimentum volutpat augue. Donec luctus sem vulputate, iaculis sem ac, pulvinar
+            lacus. Maecenas sagittis consequat nulla, ac rutrum tortor malesuada eu. Fusce scelerisque elementum enim a
+            luctus.</p>
     </div>
 
     <div id="about-page" class="pages d-none">
         Om mig
     </div>
 
-    <div id="education-page" class="pages">
+    <div id="education-page" class="pages d-none">
         <div id="nackademin">
             <h1>Nackademin</h1>
             <h2>Webbutvecklare fullstack open source</h2>
@@ -52,7 +65,8 @@
                                 data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 JavaScript 1
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <span class="badge badge-success">Klar</span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
 
@@ -75,7 +89,8 @@
                                 data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 JavaScript 2
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <span class="badge badge-primary">Pågående</span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -97,7 +112,8 @@
                                 data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Programmering backend 1
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <span class="badge badge-info">Startar 2019-11-18</span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
@@ -120,7 +136,7 @@
                                 data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                                 Webbutveckling med PHP
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
@@ -143,7 +159,7 @@
                                 data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
                                 Webbutveckling med CMS
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
@@ -166,7 +182,7 @@
                                 data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                 LIA 1
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
@@ -189,7 +205,7 @@
                                 data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
                                 Programmering backend 2
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
@@ -212,7 +228,7 @@
                                 data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
                                 Objektorienterad analys och design
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
@@ -235,7 +251,7 @@
                                 data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
                                 JavaScript-bibliotek och ramverk
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
@@ -258,7 +274,7 @@
                                 data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                                 Application Lifecycle Management
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseTen" class="collapse" aria-labelledby="headingTen" data-parent="#accordionExample">
@@ -280,7 +296,7 @@
                                 data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                                 LIA 2
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
@@ -303,7 +319,7 @@
                                 data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
                                 Examensarbete
                             </button>
-                            <span class="octicon octicon-chevron-down"></span>
+                            <i class="fas fa-chevron-down"></i>
                         </h2>
                     </div>
                     <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
@@ -334,10 +350,19 @@
     </div>
 
     <div id="work-page" class="pages d-none">
-        Arbetslivserfarenhet
+        <h1>PostNord</h1>
+        <h2>Terminalarbetare</h2>
+        <h3>2015 - 2019</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pretium malesuada nisi, sed accumsan urna
+            ornare lacinia. Aenean lacinia, massa at tristique mollis, sem turpis faucibus ex, eu porta nibh nisi non
+            nulla. Nulla a vulputate lacus, eu bibendum nisl. Curabitur ultricies lectus urna, eu scelerisque enim porta
+            id. Suspendisse dictum vestibulum urna. Donec rutrum at urna sit amet mollis. Suspendisse diam dolor,
+            pretium sed bibendum vitae, condimentum volutpat augue. Donec luctus sem vulputate, iaculis sem ac, pulvinar
+            lacus. Maecenas sagittis consequat nulla, ac rutrum tortor malesuada eu. Fusce scelerisque elementum enim a
+            luctus.</p>
     </div>
 
-    <div id="portfolio-page" class="pages d-none">
+    <div id="portfolio-page" class="pages">
         <div class="row p-3">
             <div class="card col-sm m-3" style="width: 18rem;">
                 <img class="card-img-top" src="http://placekitten.com/100/100" alt="Card image cap">
@@ -345,7 +370,8 @@
                     <h5 class="card-title">Quiz</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="https://github.com/RickardPedersen/JS1-uppgift2-Rickard-Pedersen"
+                        class="btn btn-primary">GitHub repository</a>
                 </div>
             </div>
 
@@ -355,19 +381,36 @@
                     <h5 class="card-title">CRM</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="https://github.com/timbror/CRM-Grupp-K" class="btn btn-primary">GitHub repository</a>
                 </div>
             </div>
 
             <div class="card col-sm m-3" style="width: 18rem;">
                 <img class="card-img-top" src="http://placekitten.com/100/100" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">CRM</h5>
+                    <h5 class="card-title">Online CV/portfolio</h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                         card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <a href="https://github.com/RickardPedersen/Online-CV-portfolio" class="btn btn-primary">GitHub
+                        repository</a>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div id="contact-page" class="pages d-none">
+        <div id="contact-info">
+            <h1>Kontaktuppgifter</h1>
+            <a href="mailto:pedersen.rickard@outlook.com">pedersen.rickard@outlook.com</a>
+            <a href="tel:0722539595">072-253 95 95</a>
+            <span>
+                <a href="https://www.linkedin.com/in/rickardpedersen/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/RickardPedersen">
+                    <i class="fab fa-github"></i>
+                </a>
+            </span>
         </div>
     </div>
 

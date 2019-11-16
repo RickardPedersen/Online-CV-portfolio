@@ -1,10 +1,22 @@
-.accordion .octicon {
+.accordion .fa-chevron-down {
   float: right;
   font-size: 2rem;
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
+}
+
+#contact-info a {
+  display: block;
+}
+
+#contact-info span > a {
+  display: initial;
+}
+
+#contact-info .fa-linkedin, #contact-info .fa-github {
+  font-size: 3rem;
 }
 
 .flipImage {

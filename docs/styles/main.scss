@@ -1,8 +1,21 @@
 .accordion {
-    .octicon {
+    .fa-chevron-down {
         float: right;
         font-size: 2rem;
         transition: transform 250ms;
+    }
+}
+
+#contact-info {
+    a {
+        display: block;
+    }
+
+    span > a {
+        display: initial;
+    }
+    .fa-linkedin, .fa-github {
+        font-size: 3rem;
     }
 }
 

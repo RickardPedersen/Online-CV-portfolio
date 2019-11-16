@@ -21,7 +21,7 @@ $(function () {
         //Slide down/up effect
         $(this).children(".collapse").slideToggle(250);
         //Flips the arrow icon
-        $(this).find(".octicon").toggleClass("flipImage");
+        $(this).find(".fa-chevron-down").toggleClass("flipImage");
     });
     /*End of education page*/
 
