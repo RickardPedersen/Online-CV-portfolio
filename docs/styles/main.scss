@@ -1,3 +1,11 @@
+/*Theming*/
+/*
+$danger: white;
+
+$body-bg: $danger;
+*/
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 .accordion {
     .fa-chevron-down {
         float: right;
@@ -22,10 +30,3 @@
 .flipImage {
     transform: rotateX(180deg);
 }
-
-/*
-$danger: white;
-
-$body-bg: $danger;
-*/
-@import "../node_modules/bootstrap/scss/bootstrap";

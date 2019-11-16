@@ -1,29 +1,4 @@
-.accordion .fa-chevron-down {
-  float: right;
-  font-size: 2rem;
-  -webkit-transition: -webkit-transform 250ms;
-  transition: -webkit-transform 250ms;
-  transition: transform 250ms;
-  transition: transform 250ms, -webkit-transform 250ms;
-}
-
-#contact-info a {
-  display: block;
-}
-
-#contact-info span > a {
-  display: initial;
-}
-
-#contact-info .fa-linkedin, #contact-info .fa-github {
-  font-size: 3rem;
-}
-
-.flipImage {
-  -webkit-transform: rotateX(180deg);
-          transform: rotateX(180deg);
-}
-
+/*Theming*/
 /*
 $danger: white;
 
@@ -10590,5 +10565,31 @@ a.text-dark:hover, a.text-dark:focus {
     color: inherit;
     border-color: #dee2e6;
   }
+}
+
+.accordion .fa-chevron-down {
+  float: right;
+  font-size: 2rem;
+  -webkit-transition: -webkit-transform 250ms;
+  transition: -webkit-transform 250ms;
+  transition: transform 250ms;
+  transition: transform 250ms, -webkit-transform 250ms;
+}
+
+#contact-info a {
+  display: block;
+}
+
+#contact-info span > a {
+  display: initial;
+}
+
+#contact-info .fa-linkedin, #contact-info .fa-github {
+  font-size: 3rem;
+}
+
+.flipImage {
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
 }
 /*# sourceMappingURL=main.css.map */
