@@ -32,6 +32,21 @@ $body-bg: var(--dark);
             color: black;
         }
     }
+
+    .resp-link {
+        display: none;
+    }
+
+    /*Changes navbar links when it becomes a hamburger menu*/
+    @media screen and (max-width: 991px) {
+        .norm-link {
+            display: none;
+        }
+
+        .resp-link {
+            display: block;
+        }
+    }
 }
 
 /*Education page*/

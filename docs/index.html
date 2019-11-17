@@ -23,51 +23,92 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <!--Education link-->
-                <a class="nav-item nav-link" id="education-button" tabindex="0" data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup">
+                <a class="nav-item nav-link norm-link" id="education-button" tabindex="0">
+                    <span lang="sv">Utbildning</span>
+                    <span lang="en" class="d-none">Education</span>
+                </a>
+                <!--Education link responsive-->
+                <a class="nav-item nav-link resp-link" id="education-button-responsive" tabindex="0"
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup">
                     <span lang="sv">Utbildning</span>
                     <span lang="en" class="d-none">Education</span>
                 </a>
                 <!--Work link-->
-                <a class="nav-item nav-link" id="work-button" tabindex="0" data-toggle="collapse"
+                <a class="nav-item nav-link norm-link" id="work-button" tabindex="0">
+                    <span lang="sv">Arbetslivserfarenhet</span>
+                    <span lang="en" class="d-none">Work experience</span>
+                </a>
+                <!--Work link responsive-->
+                <a class="nav-item nav-link resp-link" id="work-button-responsive" tabindex="0" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup">
                     <span lang="sv">Arbetslivserfarenhet</span>
                     <span lang="en" class="d-none">Work experience</span>
                 </a>
                 <!--Portfolio link-->
-                <a class="nav-item nav-link" id="portfolio-button" tabindex="0" data-toggle="collapse"
-                    data-target="#navbarNavAltMarkup">
+                <a class="nav-item nav-link norm-link" id="portfolio-button" tabindex="0">
+                    <span lang="sv">Portfölj</span>
+                    <span lang="en" class="d-none">Portfolio</span>
+                </a>
+                <!--Portfolio link responsive-->
+                <a class="nav-item nav-link resp-link" id="portfolio-button-responsive" tabindex="0"
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup">
                     <span lang="sv">Portfölj</span>
                     <span lang="en" class="d-none">Portfolio</span>
                 </a>
                 <!--Contact link-->
-                <a class="nav-item nav-link" id="contact-button" tabindex="0" data-toggle="collapse"
+                <a class="nav-item nav-link norm-link" id="contact-button" tabindex="0">
+                    <span lang="sv">Kontakt</span>
+                    <span lang="en" class="d-none">Contact</span>
+                </a>
+                <!--Contact link responsive-->
+                <a class="nav-item nav-link resp-link" id="contact-button" tabindex="0" data-toggle="collapse"
                     data-target="#navbarNavAltMarkup">
                     <span lang="sv">Kontakt</span>
                     <span lang="en" class="d-none">Contact</span>
                 </a>
             </div>
             <!--Language selector-->
-            <div class="nav-item dropdown language-dropdown" tabindex="0">
+            <div class="nav-item dropdown language-dropdown norm-link" tabindex="0">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <span lang="sv">Språk</span>
                     <span lang="en" class="d-none">Language</span>
                 </a>
                 <!--Language menu-->
-                <div class="dropdown-menu language-dropdown-menu" aria-labelledby="navbarDropdown">
-                    <button class="dropdown-item" type="button" id="sv-button" value="sv" data-toggle="collapse"
+                <div class="dropdown-menu dropdown-menu-right language-dropdown-menu" aria-labelledby="navbarDropdown">
+                    <button class="dropdown-item sv-button" type="button" value="sv">
+                        <span lang="sv">Svenska</span>
+                        <span lang="en" class="d-none">Swedish</span>
+                    </button>
+                    <button class="dropdown-item en-button" type="button" value="en">
+                        <span lang="sv">Engelska</span>
+                        <span lang="en" class="d-none">English</span>
+                    </button>
+                </div>
+            </div>
+            <!--Language selector responsive-->
+            <div class="nav-item dropdown language-dropdown resp-link" tabindex="0">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownResp" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    <span lang="sv">Språk</span>
+                    <span lang="en" class="d-none">Language</span>
+                </a>
+                <!--Language menu responsive-->
+                <div class="dropdown-menu dropdown-menu-left language-dropdown-menu"
+                    aria-labelledby="navbarDropdownResp">
+                    <button class="dropdown-item sv-button" type="button" value="sv" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup">
                         <span lang="sv">Svenska</span>
                         <span lang="en" class="d-none">Swedish</span>
                     </button>
-                    <button class="dropdown-item" type="button" id="en-button" value="en" data-toggle="collapse"
+                    <button class="dropdown-item en-button" type="button" value="en" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup">
                         <span lang="sv">Engelska</span>
                         <span lang="en" class="d-none">English</span>
                     </button>
                 </div>
             </div>
+
         </div>
     </nav>
 
@@ -76,8 +117,8 @@
         <!--Landing page-->
         <div id="landing-page" class="pages">
             <!--Headings landing-->
-            <h1 lang="sv" tabindex="0">Välkommen till min sida!</h1>
-            <h1 lang="en" class="d-none" tabindex="0">Welcome to my page!</h1>
+            <h1 lang="sv" class="display-4" tabindex="0">Välkommen till min sida!</h1>
+            <h1 lang="en" class="display-4 d-none" tabindex="0">Welcome to my page!</h1>
             <!--Summary-->
             <p lang="sv" tabindex="0">
                 Hej! Jag heter Rickard Pedersen och går utbildningen "Webbutvecklare fullstack open source på

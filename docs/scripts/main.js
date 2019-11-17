@@ -24,7 +24,7 @@ $(function () {
     }
 
     // Event listener for sv-button
-    $("#sv-button").on("click", function () {
+    $(".sv-button").on("click", function () {
         // Saves language option in local storage
         language = this.value;
         localStorage.setItem("language", language);
@@ -34,7 +34,7 @@ $(function () {
     })
 
     // Event listener for en-button
-    $("#en-button").on("click", function () {
+    $(".en-button").on("click", function () {
         // Saves language option in local storage
         language = this.value;
         localStorage.setItem("language", language);
