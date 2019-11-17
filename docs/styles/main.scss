@@ -1,10 +1,32 @@
 /*Theming*/
-/*
-$danger: white;
 
-$body-bg: $danger;
-*/
-@import "../node_modules/bootstrap/scss/bootstrap";
+$theme-colors: (
+    "primary": #521751,
+    "dark": #212529
+);
+
+$body-bg: var(--dark);
+
+body {
+    .navbar {
+        height: 80px;
+        margin-bottom: 30px;
+    }
+}
+
+.language {
+    color: white;
+}
+
+.my-navbar {
+    background-image: linear-gradient(var(--primary) 990%, var(--dark));
+}
+
+
+#navbarNavAltMarkup {
+    float: right;
+}
+
 
 .accordion {
     .fa-chevron-down {
@@ -30,3 +52,5 @@ $body-bg: $danger;
 .flipImage {
     transform: rotateX(180deg);
 }
+
+@import "../node_modules/bootstrap/scss/bootstrap";
