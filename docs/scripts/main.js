@@ -46,7 +46,7 @@ $(function () {
         //Slide down/up effect
         $(this).children(".collapse").slideToggle(250);
         //Flips the arrow icon
-        $(this).find(".fa-chevron-down").toggleClass("flipImage");
+        $(this).find("img").toggleClass("flipImage");
     });
     /*End of education page*/
 

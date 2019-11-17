@@ -5,21 +5,34 @@ $theme-colors: (
     "dark": #212529
 );
 
+$navbar-dark-color: rgba(#fff, .75);
+$navbar-dark-hover-color: #fff;
+
 $body-bg: var(--dark);
+
+* {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
 body {
     .navbar {
-        height: 80px;
         margin-bottom: 30px;
     }
 }
 
-.language {
-    color: white;
+
+.language-dropdown {
+    color: rgba(#fff, .75);
+
+    :hover {
+        color: #fff;
+    }
 }
 
-.my-navbar {
-    background-image: linear-gradient(var(--primary) 990%, var(--dark));
+.dropdown-menu {
+    :hover {
+        color: black;
+    }
 }
 
 
@@ -29,11 +42,16 @@ body {
 
 
 .accordion {
-    .fa-chevron-down {
+    img {
         float: right;
-        font-size: 2rem;
         transition: transform 250ms;
     }
+
+    
+}
+
+.flipImage {
+    transform: rotateX(180deg);
 }
 
 #contact-info {
@@ -43,14 +61,16 @@ body {
 
     span > a {
         display: initial;
-    }
-    .fa-linkedin, .fa-github {
-        font-size: 3rem;
+        
+        :hover {
+            filter: invert(30%); 
+
+       }
     }
 }
 
-.flipImage {
-    transform: rotateX(180deg);
-}
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
