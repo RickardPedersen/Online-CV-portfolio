@@ -23,22 +23,26 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
                 <!--Education link-->
-                <a class="nav-item nav-link" id="education-button" tabindex="0">
+                <a class="nav-item nav-link" id="education-button" tabindex="0" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup">
                     <span lang="sv">Utbildning</span>
                     <span lang="en" class="d-none">Education</span>
                 </a>
                 <!--Work link-->
-                <a class="nav-item nav-link" id="work-button" tabindex="0">
+                <a class="nav-item nav-link" id="work-button" tabindex="0" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup">
                     <span lang="sv">Arbetslivserfarenhet</span>
                     <span lang="en" class="d-none">Work experience</span>
                 </a>
                 <!--Portfolio link-->
-                <a class="nav-item nav-link" id="portfolio-button" tabindex="0">
+                <a class="nav-item nav-link" id="portfolio-button" tabindex="0" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup">
                     <span lang="sv">Portfölj</span>
                     <span lang="en" class="d-none">Portfolio</span>
                 </a>
                 <!--Contact link-->
-                <a class="nav-item nav-link" id="contact-button" tabindex="0">
+                <a class="nav-item nav-link" id="contact-button" tabindex="0" data-toggle="collapse"
+                    data-target="#navbarNavAltMarkup">
                     <span lang="sv">Kontakt</span>
                     <span lang="en" class="d-none">Contact</span>
                 </a>
@@ -52,11 +56,13 @@
                 </a>
                 <!--Language menu-->
                 <div class="dropdown-menu language-dropdown-menu" aria-labelledby="navbarDropdown">
-                    <button class="dropdown-item" type="button" id="sv-button" value="sv">
+                    <button class="dropdown-item" type="button" id="sv-button" value="sv" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup">
                         <span lang="sv">Svenska</span>
                         <span lang="en" class="d-none">Swedish</span>
                     </button>
-                    <button class="dropdown-item" type="button" id="en-button" value="en">
+                    <button class="dropdown-item" type="button" id="en-button" value="en" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup">
                         <span lang="sv">Engelska</span>
                         <span lang="en" class="d-none">English</span>
                     </button>
@@ -68,7 +74,7 @@
     <!--Page container-->
     <div class="container shadow-lg p-3 mb-5 bg-white rounded">
         <!--Landing page-->
-        <div id="landing-page" class="pages d-none">
+        <div id="landing-page" class="pages">
             <!--Headings landing-->
             <h1 lang="sv" tabindex="0">Välkommen till min sida!</h1>
             <h1 lang="en" class="d-none" tabindex="0">Welcome to my page!</h1>
@@ -84,7 +90,7 @@
         </div>
 
         <!--Education page-->
-        <div id="education-page" class="pages">
+        <div id="education-page" class="pages d-none">
             <!--Nackademin-->
             <div id="nackademin">
                 <!--Headings nackademin-->
@@ -110,9 +116,11 @@
                                     data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <div>JavaScript 1</div>
                                 </button>
-                                <span lang="sv" class="badge badge-success" tabindex="0">Klar</span>
-                                <span lang="en" class="badge badge-success d-none" tabindex="0">Done</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span lang="sv" class="badge badge-success" tabindex="0">Klar</span>
+                                    <span lang="en" class="badge badge-success d-none" tabindex="0">Done</span>
+                                    <span><img src="images/arrow-down.png" alt="chevron icon" tabindex="0"></span>
+                                </div>
                             </h2>
                         </div>
                         <!--JavaScript 1 descriptions-->
@@ -151,9 +159,11 @@
                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <div>JavaScript 2</div>
                                 </button>
-                                <span lang="sv" class="badge badge-success" tabindex="0">Klar</span>
-                                <span lang="en" class="badge badge-success d-none" tabindex="0">Done</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span lang="sv" class="badge badge-success" tabindex="0">Klar</span>
+                                    <span lang="en" class="badge badge-success d-none" tabindex="0">Done</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--JavaScript 2 descriptions-->
@@ -198,10 +208,11 @@
                                     <div lang="sv">Programmering backend 1</div>
                                     <div lang="en" class="d-none">Programming backend 1</div>
                                 </button>
-                                <span class="badge badge-primary"></span>
-                                <span lang="sv" class="badge badge-primary" tabindex="0">Pågående</span>
-                                <span lang="en" class="badge badge-primary d-none" tabindex="0">Ongoing</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span lang="sv" class="badge badge-primary" tabindex="0">Pågående</span>
+                                    <span lang="en" class="badge badge-primary d-none" tabindex="0">Ongoing</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--Programming backend 1 descriptions-->
@@ -232,8 +243,10 @@
                                     <div lang="sv">Webbutveckling med PHP</div>
                                     <div lang="en" class="d-none">Web development with PHP</div>
                                 </button>
-                                <span class="badge badge-info" tabindex="0">Start 2020-01-13</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-info" tabindex="0">Start 2020-01-13</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--Web development with PHP descriptions-->
@@ -274,8 +287,10 @@
                                     <div lang="sv">Webbutveckling med CMS</div>
                                     <div lang="en" class="d-none">Web development with CMS</div>
                                 </button>
-                                <span class="badge badge-info" tabindex="0">Start 2020-02-10</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-info" tabindex="0">Start 2020-02-10</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--Web development with CMS descriptions-->
@@ -311,8 +326,10 @@
                                     data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
                                     <div>LIA 1</div>
                                 </button>
-                                <span class="badge badge-info" tabindex="0">Start 2020-03-23</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-info" tabindex="0">Start 2020-03-23</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--LIA 1 descriptions-->
@@ -352,8 +369,10 @@
                                     <div lang="sv">Programmering backend 2</div>
                                     <div lang="en" class="d-none">Programming backend 2</div>
                                 </button>
-                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--Programming backend 2 descriptions-->
@@ -397,8 +416,10 @@
                                     <div lang="sv">Objektorienterad analys och design</div>
                                     <div lang="en" class="d-none">Object-oriented analysis and design</div>
                                 </button>
-                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--Object-oriented analysis and design descriptions-->
@@ -434,8 +455,10 @@
                                     <div lang="sv">JavaScript-bibliotek och ramverk</div>
                                     <div lang="en" class="d-none">JavaScript libraries and frameworks</div>
                                 </button>
-                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--JavaScript libraries and frameworks descriptions-->
@@ -475,8 +498,10 @@
                                     data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                                     <div>Application Lifecycle Management</div>
                                 </button>
-                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--Application Lifecycle Management descriptions-->
@@ -510,8 +535,10 @@
                                     data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                                     <div>LIA 2</div>
                                 </button>
-                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--LIA 2 descriptions-->
@@ -547,8 +574,10 @@
                                     <div lang="sv">Examensarbete</div>
                                     <div lang="en" class="d-none">Degree Project</div>
                                 </button>
-                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
-                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                <div class="right-aligned-box">
+                                    <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                    <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
+                                </div>
                             </h2>
                         </div>
                         <!--Degree Project descriptions-->
@@ -698,8 +727,7 @@
                             <p lang="en" class="card-text d-none" tabindex="0">
                                 The site you are on right now! SPA with bootstrap.
                             </p>
-                            <a href="https://github.com/RickardPedersen/Online-CV-portfolio"
-                                class="btn btn-primary">
+                            <a href="https://github.com/RickardPedersen/Online-CV-portfolio" class="btn btn-primary">
                                 GitHub repository
                             </a>
                         </div>

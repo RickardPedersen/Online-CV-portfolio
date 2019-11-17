@@ -1,5 +1,4 @@
 /*Theming*/
-
 $theme-colors: (
     "primary": #521751,
     "dark": #212529,
@@ -14,7 +13,7 @@ $body-bg: var(--dark);
 
 /*Navbar*/
 .navbar {
-    margin-bottom: 30px;
+    margin-bottom: 2rem;
 
     #navbarNavAltMarkup {
         float: right;
@@ -38,13 +37,14 @@ $body-bg: var(--dark);
 /*Education page*/
 #education-page {
     .accordion {
-        img {
+        .right-aligned-box {
             float: right;
-            transition: transform 250ms;
-        }
-    
-        .flipImage {
-            transform: rotateX(180deg);
+            img {
+                transition: transform 250ms;
+            }
+            .flipImage {
+                transform: rotateX(180deg);
+            }
         }
     }
 }

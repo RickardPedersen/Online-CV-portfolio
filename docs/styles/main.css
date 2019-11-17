@@ -1,7 +1,7 @@
 /*Theming*/
 /*Navbar*/
 .navbar {
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 
 .navbar #navbarNavAltMarkup {
@@ -21,15 +21,18 @@
 }
 
 /*Education page*/
-#education-page .accordion img {
+#education-page .accordion .right-aligned-box {
   float: right;
+}
+
+#education-page .accordion .right-aligned-box img {
   -webkit-transition: -webkit-transform 250ms;
   transition: -webkit-transform 250ms;
   transition: transform 250ms;
   transition: transform 250ms, -webkit-transform 250ms;
 }
 
-#education-page .accordion .flipImage {
+#education-page .accordion .right-aligned-box .flipImage {
   -webkit-transform: rotateX(180deg);
           transform: rotateX(180deg);
 }
