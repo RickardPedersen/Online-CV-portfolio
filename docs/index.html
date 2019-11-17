@@ -5,43 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CV</title>
-
+    <title>Rickard Pedersen</title>
+    <!--CSS links-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
 
 <body>
+    <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <!--Brand-->
         <a class="navbar-brand" id="landing-button" href="#">Rickard Pedersen</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
             aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <!--Links-->
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
+                <!--Education link-->
                 <a class="nav-item nav-link" id="education-button" tabindex="0">
                     <span lang="sv">Utbildning</span>
                     <span lang="en" class="d-none">Education</span>
                 </a>
+                <!--Work link-->
                 <a class="nav-item nav-link" id="work-button" tabindex="0">
                     <span lang="sv">Arbetslivserfarenhet</span>
                     <span lang="en" class="d-none">Work experience</span>
                 </a>
+                <!--Portfolio link-->
                 <a class="nav-item nav-link" id="portfolio-button" tabindex="0">
                     <span lang="sv">Portfölj</span>
                     <span lang="en" class="d-none">Portfolio</span>
                 </a>
+                <!--Contact link-->
                 <a class="nav-item nav-link" id="contact-button" tabindex="0">
                     <span lang="sv">Kontakt</span>
                     <span lang="en" class="d-none">Contact</span>
                 </a>
             </div>
+            <!--Language selector-->
             <div class="nav-item dropdown language-dropdown" tabindex="0">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <span lang="sv">Språk</span>
                     <span lang="en" class="d-none">Language</span>
                 </a>
+                <!--Language menu-->
                 <div class="dropdown-menu language-dropdown-menu" aria-labelledby="navbarDropdown">
                     <button class="dropdown-item" type="button" id="sv-button" value="sv">
                         <span lang="sv">Svenska</span>
@@ -56,37 +65,44 @@
         </div>
     </nav>
 
+    <!--Page container-->
     <div class="container shadow-lg p-3 mb-5 bg-white rounded">
-
+        <!--Landing page-->
         <div id="landing-page" class="pages d-none">
+            <!--Headings landing-->
             <h1 lang="sv" tabindex="0">Välkommen till min sida!</h1>
             <h1 lang="en" class="d-none" tabindex="0">Welcome to my page!</h1>
-
-            <p lang="sv" tabindex="0">Hej! Jag heter Rickard Pedersen och går utbildningen "Webbutvecklare fullstack open source på
-                Nackademin.
-                Just nu söker jag LIA-praktikplats under perioden 23 mars - 29 maj. Vi hörs!</p>
-            <p lang="en" class="d-none" tabindex="0">Hello! My name in Rickard Pedersen and I'm studying "Web development full stack
-                open source" at Nackademin. Right now I'm looking for LIA-internship from March 23 to May 29. Take care!
+            <!--Summary-->
+            <p lang="sv" tabindex="0">
+                Hej! Jag heter Rickard Pedersen och går utbildningen "Webbutvecklare fullstack open source på
+                Nackademin. Just nu söker jag LIA-praktikplats under perioden 23 mars - 29 maj. Vi hörs!
+            </p>
+            <p lang="en" class="d-none" tabindex="0">
+                Hello! My name in Rickard Pedersen and I'm studying "Web development full stack open source" at
+                Nackademin. Right now I'm looking for LIA-internship from March 23 to May 29. Take care!
             </p>
         </div>
 
+        <!--Education page-->
         <div id="education-page" class="pages">
+            <!--Nackademin-->
             <div id="nackademin">
+                <!--Headings nackademin-->
                 <h1 class="display-4" tabindex="0">Nackademin</h1>
                 <h1 lang="sv" tabindex="0">Webbutvecklare fullstack open sorce</h1>
                 <h1 lang="en" class="d-none" tabindex="0">Web developer full stack open sorce</h1>
-
                 <p class="lead" tabindex="0">2019 - 2021</p>
                 <hr class="my-4">
 
-
+                <!--Accordion with courses-->
                 <div class="accordion" id="accordionExample">
+                    <!--Headings year 1-->
                     <h2 lang="sv" tabindex="0">Kurser</h2>
                     <h2 lang="en" class="d-none" tabindex="0">Courses</h2>
                     <hr class="my-4">
                     <p lang="sv" class="lead" tabindex="0">Årskurs 1</p>
                     <p lang="en" class="lead d-none" tabindex="0">Year 1</p>
-
+                    <!--JavaScript 1 card-->
                     <div class="card">
                         <div class="card-header" id="headingOne">
                             <h2 class="mb-0">
@@ -99,7 +115,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
-
+                        <!--JavaScript 1 descriptions-->
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -127,6 +143,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--JavaScript 2 card-->
                     <div class="card">
                         <div class="card-header" id="headingTwo">
                             <h2 class="mb-0">
@@ -139,6 +156,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--JavaScript 2 descriptions-->
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -171,6 +189,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Programming backend 1 card-->
                     <div class="card">
                         <div class="card-header" id="headingThree">
                             <h2 class="mb-0">
@@ -185,6 +204,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--Programming backend 1 descriptions-->
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -203,6 +223,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Web development with PHP card-->
                     <div class="card">
                         <div class="card-header" id="headingFour">
                             <h2 class="mb-0">
@@ -215,6 +236,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--Web development with PHP descriptions-->
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -243,6 +265,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Web development with CMS card-->
                     <div class="card">
                         <div class="card-header" id="headingFive">
                             <h2 class="mb-0">
@@ -255,6 +278,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--Web development with CMS descriptions-->
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -279,6 +303,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--LIA 1 card-->
                     <div class="card">
                         <div class="card-header" id="headingSix">
                             <h2 class="mb-0">
@@ -290,6 +315,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--LIA 1 descriptions-->
                         <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -313,9 +339,11 @@
                             </div>
                         </div>
                     </div>
+                    <!--Headings year 2-->
                     <hr class="my-4">
                     <p lang="sv" class="lead" tabindex="0">Årskurs 2</p>
                     <p lang="en" class="lead d-none" tabindex="0">Year 2</p>
+                    <!--Programming backend 2 card-->
                     <div class="card">
                         <div class="card-header" id="headingSeven">
                             <h2 class="mb-0">
@@ -328,6 +356,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--Programming backend 2 descriptions-->
                         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -359,6 +388,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Object-oriented analysis and design card-->
                     <div class="card">
                         <div class="card-header" id="headingEight">
                             <h2 class="mb-0">
@@ -371,6 +401,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--Object-oriented analysis and design descriptions-->
                         <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -394,6 +425,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--JavaScript libraries and frameworks card-->
                     <div class="card">
                         <div class="card-header" id="headingNine">
                             <h2 class="mb-0">
@@ -406,6 +438,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--JavaScript libraries and frameworks descriptions-->
                         <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -434,17 +467,19 @@
                             </div>
                         </div>
                     </div>
+                    <!--Application Lifecycle Management card-->
                     <div class="card">
                         <div class="card-header" id="headingTen">
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-                                    Application Lifecycle Management
+                                    <div>Application Lifecycle Management</div>
                                 </button>
                                 <span class="badge badge-secondary" tabindex="0">Start TBD</span>
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--Application Lifecycle Management descriptions-->
                         <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -467,17 +502,19 @@
                             </div>
                         </div>
                     </div>
+                    <!--LIA 2 card-->
                     <div class="card">
                         <div class="card-header" id="headingEleven">
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
-                                    LIA 2
+                                    <div>LIA 2</div>
                                 </button>
                                 <span class="badge badge-secondary" tabindex="0">Start TBD</span>
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--LIA 2 descriptions-->
                         <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -501,6 +538,7 @@
                             </div>
                         </div>
                     </div>
+                    <!--Degree Project card-->
                     <div class="card">
                         <div class="card-header" id="headingTwelve">
                             <h2 class="mb-0">
@@ -513,6 +551,7 @@
                                 <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
+                        <!--Degree Project descriptions-->
                         <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
                             data-parent="#accordionExample">
                             <div class="card-body">
@@ -550,13 +589,16 @@
             </div>
             <hr class="my-4">
 
+            <!--Åsö-->
             <div id="aso">
+                <!--Headings åsö-->
                 <h1 lang="sv" class="display-4" tabindex="0">Åsö vuxengymnasium</h1>
                 <h1 lang="en" class="display-4 d-none" tabindex="0">Åsö adult education</h1>
                 <p class="lead" tabindex="0">2019</p>
                 <hr class="my-4">
                 <h2 lang="sv" tabindex="0">Kurser</h2>
                 <h2 lang="en" class="d-none" tabindex="0">Courses</h2>
+                <!--List with courses-->
                 <ul class="list-group">
                     <li lang="sv" class="list-group-item" tabindex="0">Programmering 1</li>
                     <li lang="en" class="list-group-item d-none" tabindex="0">Programming 1</li>
@@ -566,9 +608,11 @@
                     <li lang="en" class="list-group-item d-none" tabindex="0">Mathematics 3c</li>
                 </ul>
             </div>
-
             <hr class="my-4">
+
+            <!--Rytmus-->
             <div id="rytmus">
+                <!--Headings rytmus-->
                 <h1 class="display-4" tabindex="0">Rytmus Gymnasium</h1>
                 <h1 lang="sv" tabindex="0">Estetik och media - Medieproduktion</h1>
                 <h1 lang="en" class="d-none" tabindex="0">Aesthetics and media - Media production</h1>
@@ -576,12 +620,15 @@
             </div>
         </div>
 
+        <!--Work page-->
         <div id="work-page" class="pages d-none">
+            <!--Headings postnord-->
             <h1 class="display-4" tabindex="0">PostNord</h1>
             <h1 lang="sv" tabindex="0">Terminalarbetare</h1>
             <h1 lang="en" class="d-none" tabindex="0">Terminal Worker</h1>
             <p class="lead" tabindex="0">2015 - 2018</p>
             <hr class="my-4">
+            <!--Descriptions postnord-->
             <div lang="sv">
                 <h3 tabindex="0">Arbetsuppgifter</h3>
                 <hr class="my-4">
@@ -602,39 +649,59 @@
             </div>
         </div>
 
+        <!--Portfolio page-->
         <div id="portfolio-page" class="pages d-none">
             <div class="row">
+                <!--Quiz card-->
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title" tabindex="0">Quiz</h5>
-                            <p lang="sv" class="card-text" tabindex="0">Uppgift i kursen JavaScript 1. En Quiz-applikation.</p>
-                            <p lang="en" class="card-text d-none" tabindex="0">An assignment in JavaScript 1. A Quiz application.</p>
+                            <p lang="sv" class="card-text" tabindex="0">
+                                Uppgift i kursen JavaScript 1. En Quiz-applikation.
+                            </p>
+                            <p lang="en" class="card-text d-none" tabindex="0">
+                                An assignment in JavaScript 1. A Quiz application.
+                            </p>
                             <a href="https://github.com/RickardPedersen/JS1-uppgift2-Rickard-Pedersen"
-                                class="btn btn-primary">GitHub repository</a>
+                                class="btn btn-primary">
+                                GitHub repository
+                            </a>
                         </div>
                     </div>
                 </div>
+                <!--CRM card-->
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title" tabindex="0">CRM</h5>
-                            <p lang="sv" class="card-text" tabindex="0">Grupprojekt i kursen JavaScript 2. Ett CRM system.</p>
-                            <p lang="en" class="card-text d-none" tabindex="0">Group project in JavaScript 2. A CRM system.</p>
-                            <a href="https://github.com/timbror/CRM-Grupp-K" class="btn btn-primary">GitHub
-                                repository</a>
+                            <p lang="sv" class="card-text" tabindex="0">
+                                Grupprojekt i kursen JavaScript 2. Ett CRM system.
+                            </p>
+                            <p lang="en" class="card-text d-none" tabindex="0">
+                                Group project in JavaScript 2. A CRM system.
+                            </p>
+                            <a href="https://github.com/timbror/CRM-Grupp-K" class="btn btn-primary">
+                                GitHub repository
+                            </a>
                         </div>
                     </div>
                 </div>
-
+                <!--CV card-->
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title" tabindex="0">Online CV/portfolio</h5>
-                            <p lang="sv" class="card-text" tabindex="0">Sidan du är på just nu! En SPA med bootstrap.</p>
-                            <p lang="en" class="card-text d-none" tabindex="0">The site you are on right now! SPA with bootstrap.</p>
+                            <p lang="sv" class="card-text" tabindex="0">
+                                Sidan du är på just nu! En SPA med bootstrap.
+                            </p>
+                            <p lang="en" class="card-text d-none" tabindex="0">
+                                The site you are on right now! SPA with bootstrap.
+                            </p>
                             <a href="https://github.com/RickardPedersen/Online-CV-portfolio"
-                                class="btn btn-primary">GitHub repository</a>
+                                class="btn btn-primary">
+                                GitHub repository
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -642,26 +709,27 @@
             </div>
         </div>
 
+        <!--Contact page-->
         <div id="contact-page" class="pages d-none">
-            
-                <h1 lang="sv" tabindex="0">Kontaktuppgifter</h1>
-                <h1 lang="en" class="d-none" tabindex="0">Contact information</h1>
-                <a href="mailto:pedersen.rickard@outlook.com">pedersen.rickard@outlook.com</a>
-                <a href="tel:0722539595">072-253 95 95</a>
-                <hr class="my-4">
-                <span>
-                    <a href="https://www.linkedin.com/in/rickardpedersen">
-                        <img src="images/linkedin-icon.png" alt="linkedin icon">
-                    </a>
-                    <a href="https://github.com/RickardPedersen">
-                        <img src="images/github-icon.png" alt="github icon">
-                    </a>
-                </span>
-            
+            <!--Contact info-->
+            <h1 lang="sv" tabindex="0">Kontaktuppgifter</h1>
+            <h1 lang="en" class="d-none" tabindex="0">Contact information</h1>
+            <a href="mailto:pedersen.rickard@outlook.com">pedersen.rickard@outlook.com</a>
+            <a href="tel:0722539595">072-253 95 95</a>
+            <hr class="my-4">
+            <!--Contact links-->
+            <span>
+                <a href="https://www.linkedin.com/in/rickardpedersen">
+                    <img src="images/linkedin-icon.png" alt="linkedin icon">
+                </a>
+                <a href="https://github.com/RickardPedersen">
+                    <img src="images/github-icon.png" alt="github icon">
+                </a>
+            </span>
         </div>
-
     </div>
 
+    <!--Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         integrity="sha384-vk5WoKIaW/vJyUAd9n/wmopsmNhiy+L2Z+SBxGYnUkunIxVxAv/UtMOhba/xskxh" crossorigin="anonymous">
     </script>
