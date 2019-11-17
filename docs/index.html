@@ -19,24 +19,24 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link" id="education-button">
+                <a class="nav-item nav-link" id="education-button" tabindex="0">
                     <span lang="sv">Utbildning</span>
                     <span lang="en" class="d-none">Education</span>
                 </a>
-                <a class="nav-item nav-link" id="work-button">
+                <a class="nav-item nav-link" id="work-button" tabindex="0">
                     <span lang="sv">Arbetslivserfarenhet</span>
                     <span lang="en" class="d-none">Work experience</span>
                 </a>
-                <a class="nav-item nav-link" id="portfolio-button">
+                <a class="nav-item nav-link" id="portfolio-button" tabindex="0">
                     <span lang="sv">Portfölj</span>
                     <span lang="en" class="d-none">Portfolio</span>
                 </a>
-                <a class="nav-item nav-link" id="contact-button">
+                <a class="nav-item nav-link" id="contact-button" tabindex="0">
                     <span lang="sv">Kontakt</span>
                     <span lang="en" class="d-none">Contact</span>
                 </a>
             </div>
-            <div class="nav-item dropdown language-dropdown">
+            <div class="nav-item dropdown language-dropdown" tabindex="0">
                 <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     <span lang="sv">Språk</span>
@@ -53,65 +53,39 @@
                     </button>
                 </div>
             </div>
-
-            <!--
-            <div class="nav-item dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <span lang="sv">Språk</span>
-                    <span lang="en" class="d-none">Language</span>
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                    <button class="dropdown-item" type="button" id="sv-button" value="sv">
-                        <span lang="sv">Svenska</span>
-                        <span lang="en" class="d-none">Swedish</span>
-                    </button>
-                    <button class="dropdown-item" type="button" id="en-button" value="en">
-                        <span lang="sv">Engelska</span>
-                        <span lang="en" class="d-none">English</span>
-                    </button>
-                </div>
-            </div>
-            -->
         </div>
     </nav>
 
     <div class="container shadow-lg p-3 mb-5 bg-white rounded">
 
         <div id="landing-page" class="pages d-none">
-            <h1 lang="sv">Välkommen till min sida!</h1>
-            <h1 lang="en" class="d-none">Welcome to my page!</h1>
+            <h1 lang="sv" tabindex="0">Välkommen till min sida!</h1>
+            <h1 lang="en" class="d-none" tabindex="0">Welcome to my page!</h1>
 
-            <p lang="sv">Hej! Jag heter Rickard Pedersen och går utbildningen "Webbutvecklare fullstack open source på
+            <p lang="sv" tabindex="0">Hej! Jag heter Rickard Pedersen och går utbildningen "Webbutvecklare fullstack open source på
                 Nackademin.
                 Just nu söker jag LIA-praktikplats under perioden 23 mars - 29 maj. Vi hörs!</p>
-            <p lang="en" class="d-none">Hello! My name in Rickard Pedersen and I'm studying "Web development full stack
+            <p lang="en" class="d-none" tabindex="0">Hello! My name in Rickard Pedersen and I'm studying "Web development full stack
                 open source" at Nackademin. Right now I'm looking for LIA-internship from March 23 to May 29. Take care!
             </p>
         </div>
 
-        <div id="education-page" class="pages d-none">
+        <div id="education-page" class="pages">
             <div id="nackademin">
-                <!--
-                <h1>Nackademin</h1>
-                <h2>Webbutvecklare fullstack open source</h2>
-                -->
+                <h1 class="display-4" tabindex="0">Nackademin</h1>
+                <h1 lang="sv" tabindex="0">Webbutvecklare fullstack open sorce</h1>
+                <h1 lang="en" class="d-none" tabindex="0">Web developer full stack open sorce</h1>
 
-
-                <h1 class="display-4">Nackademin</h1>
-                <h1 lang="sv">Webbutvecklare fullstack open sorce</h1>
-                <h1 lang="en" class="d-none">Web developer full stack open sorce</h1>
-
-                <p class="lead">2019 - 2021</p>
+                <p class="lead" tabindex="0">2019 - 2021</p>
                 <hr class="my-4">
 
 
                 <div class="accordion" id="accordionExample">
-                    <h2 lang="sv">Kurser</h2>
-                    <h2 lang="en" class="">Courses</h2>
+                    <h2 lang="sv" tabindex="0">Kurser</h2>
+                    <h2 lang="en" class="d-none" tabindex="0">Courses</h2>
                     <hr class="my-4">
-                    <p lang="sv" class="lead">Årskurs 1</p>
-                    <p lang="en" class="lead d-none">Year 1</p>
+                    <p lang="sv" class="lead" tabindex="0">Årskurs 1</p>
+                    <p lang="en" class="lead d-none" tabindex="0">Year 1</p>
 
                     <div class="card">
                         <div class="card-header" id="headingOne">
@@ -120,16 +94,16 @@
                                     data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <div>JavaScript 1</div>
                                 </button>
-                                <span lang="sv" class="badge badge-success">Klar</span>
-                                <span lang="en" class="badge badge-success d-none">Done</span>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span lang="sv" class="badge badge-success" tabindex="0">Klar</span>
+                                <span lang="en" class="badge badge-success d-none" tabindex="0">Done</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
 
                         <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med kursen är att ge de studerande förståelse för grundläggande
                                     programmering samt kompetens att utveckla programmeringslösningar i JavaScript.
                                     Målet är att de studerande ska kunna göra enklare applikationer i JavaScript samt
@@ -139,7 +113,7 @@
                                     miljö som JavaScript exekveras i och dess koppling till DOM och HTML. I kursen
                                     introduceras grundläggande krav- och versionshantering.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The aim of the course is to give the students an understanding of basic programming
                                     as well as the competence to develop programming solutions in JavaScript. The goal
                                     is for students to be able to make simpler applications in JavaScript as well as
@@ -160,15 +134,15 @@
                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                     <div>JavaScript 2</div>
                                 </button>
-                                <span lang="sv" class="badge badge-success">Klar</span>
-                                <span lang="en" class="badge badge-success d-none">Done</span>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span lang="sv" class="badge badge-success" tabindex="0">Klar</span>
+                                <span lang="en" class="badge badge-success d-none" tabindex="0">Done</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med kursen är att ge de studerande fördjupade kunskaper och färdigheter i
                                     frontendutveckling med JavaScript. De får även lära sig att manipulera HTML och CSS
                                     för att skapa en interaktiv upplevelse med ett dynamiskt innehåll på en webbsida. De
@@ -181,7 +155,7 @@
                                     de studerande ska ha förståelse för tidsestimering och projektmetodik som används i
                                     branschen.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The purpose of the course is to provide the students with in-depth knowledge and
                                     skills front end development with JavaScript. They also learn how to manipulate HTML
                                     and CSS to create an interactive experience with dynamic content on a web page. The
@@ -206,21 +180,21 @@
                                     <div lang="en" class="d-none">Programming backend 1</div>
                                 </button>
                                 <span class="badge badge-primary"></span>
-                                <span lang="sv" class="badge badge-primary">Pågående</span>
-                                <span lang="en" class="badge badge-primary d-none">Ongoing</span>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span lang="sv" class="badge badge-primary" tabindex="0">Pågående</span>
+                                <span lang="en" class="badge badge-primary d-none" tabindex="0">Ongoing</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Kursen ger den studerande grundläggande kunskaper om och färdigheter i
                                     backendutveckling med NodeJS samt programmering mot och kommunikation med olika
                                     relations- och dokumentationsdatabaser. De studerande lär sig att skapa API:er och
                                     göra anrop mot dessa samt att hantera och arbeta med olika databaser.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The course provides the student with basic knowledge and skills in backend
                                     development with NodeJS as well as programming and communication with various
                                     relational and documentation databases. The students learn how to create APIs and
@@ -237,14 +211,14 @@
                                     <div lang="sv">Webbutveckling med PHP</div>
                                     <div lang="en" class="d-none">Web development with PHP</div>
                                 </button>
-                                <span class="badge badge-info">Start 2020-01-13</span>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-info" tabindex="0">Start 2020-01-13</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med kursen är att de studerande ska få kunskaper och färdigheter i PHP med
                                     fokus på syntax, dess olika möjligheter och begränsningar samt hur PHP exekveras. De
                                     studerande ska även lära sig hur PHP interagerar med relationsdatabaser samt hur man
@@ -255,7 +229,7 @@
                                     tekniker som t.ex AJAX kan användas för att förbättra en programmeringslösning samt
                                     att publicera en webbapplikation på någon av de vanligaste webbservrarna.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The aim of the course is to give the students knowledge and skills in PHP with focus
                                     on syntax, its various possibilities and limitations and how PHP is executed.
                                     Students will also learn how PHP interacts with relational databases and how to work
@@ -277,14 +251,14 @@
                                     <div lang="sv">Webbutveckling med CMS</div>
                                     <div lang="en" class="d-none">Web development with CMS</div>
                                 </button>
-                                <span class="badge badge-info">Start 2020-02-10</span>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-info" tabindex="0">Start 2020-02-10</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med kursen är att ge en överblick över vilka stora CMS (Content Management
                                     System) som finns i branschen och att ge kunskaper i att koda och bygga lösningar
                                     med hjälp av ett CMS. De studerande får även lära sig att använda ett CMS ur ett
@@ -293,7 +267,7 @@
                                     att arbeta med en av de ledande CMS-plattformarna på marknaden samt att kunna
                                     utveckla avancerade webblösningar med ett CMS.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The purpose of the course is to provide an overview of the large CMS (Content
                                     Management System) in the industry and to provide knowledge in coding and building
                                     solutions using a CMS. Students also learn how to use a CMS from an editorial and
@@ -310,16 +284,16 @@
                             <h2 class="mb-0">
                                 <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
                                     data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                                    LIA 1
+                                    <div>LIA 1</div>
                                 </button>
-                                <span class="badge badge-info">Start 2020-03-23</span>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-info" tabindex="0">Start 2020-03-23</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med kursen är att de studerande ska komma ut på en arbetsplats och aktivt
                                     arbeta med webbutveckling och på så sätt få omsätta och utveckla sina teoretiska och
                                     praktiska webbutvecklarkunskaper i en skarp arbetsmiljö. Målet med kursen är att de
@@ -327,7 +301,7 @@
                                     praktiska förutsättningar och resurser som finns på företaget och att de har fått en
                                     god förståelse för de arbetsmetoder som används i branschen.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The purpose of the course is for the students to come out to a workplace and
                                     actively work with web development and thus be able to translate and develop their
                                     theoretical and practical web development skills in a sharp work environment. The
@@ -340,8 +314,8 @@
                         </div>
                     </div>
                     <hr class="my-4">
-                    <p lang="sv" class="lead">Årskurs 2</p>
-                    <p lang="en" class="lead d-none">Year 2</p>
+                    <p lang="sv" class="lead" tabindex="0">Årskurs 2</p>
+                    <p lang="en" class="lead d-none" tabindex="0">Year 2</p>
                     <div class="card">
                         <div class="card-header" id="headingSeven">
                             <h2 class="mb-0">
@@ -350,13 +324,14 @@
                                     <div lang="sv">Programmering backend 2</div>
                                     <div lang="en" class="d-none">Programming backend 2</div>
                                 </button>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med kursen är att ge de studerande fördjupad praktisk och teoretisk kunskap
                                     inom utveckling i NodeJS samt hur applikationer kan kopplas mot olika tjänster och
                                     molnlösningar. Kursen ger även fördjupade kunskaper i driftsättning av
@@ -368,7 +343,7 @@
                                     beslut kring sina projekt. De får även en fördjupad förståelse för och kompetens
                                     kring agil projektmetodik.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The aim of the course is to provide the students with in-depth practical and
                                     theoretical knowledge of development in NodeJS as well as how applications can be
                                     linked to different services and cloud solutions. The course also provides in-depth
@@ -392,13 +367,14 @@
                                     <div lang="sv">Objektorienterad analys och design</div>
                                     <div lang="en" class="d-none">Object-oriented analysis and design</div>
                                 </button>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med kursen är att de studerande ska förstå vad kravanalys och systemdesign
                                     innebär och praktiskt kunna hantera detta genom modellering, sammanställning av krav
                                     och utformning av design. Till modelleringen ska de kunna använda ett
@@ -406,7 +382,7 @@
                                     krav och att designa ett informationssystem utifrån ett objektorienterat synsätt
                                     samt att förstå betydelsen av design vid implementering av ett informationssystem.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The aim of the course is for the students to understand what requirements analysis
                                     and system design mean and to be able to handle this practically through modeling,
                                     compiling requirements and designing designs. For modeling, they should be able to
@@ -426,13 +402,14 @@
                                     <div lang="sv">JavaScript-bibliotek och ramverk</div>
                                     <div lang="en" class="d-none">JavaScript libraries and frameworks</div>
                                 </button>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     De studerande ges en fördjupad kunskap och kompetens för att skapa SPA-(Single Page
                                     Applications) lösningar med avancerad funktionalitet i JavaScript med hjälp av
                                     relevanta ramverk och bibliotek. De studerande ska även lära sig att anropa API:er
@@ -443,7 +420,7 @@
                                     hänsyn till bl.a. användbarhet och tillgänglighet. Arbetet sker enligt agil
                                     projektmetodik
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     Students are given in-depth knowledge and skills to create SPA (Single Page
                                     Applications) solutions with advanced functionality in JavaScript with the help of
                                     relevant frameworks and libraries. Students will also learn how to call APIs using
@@ -464,13 +441,14 @@
                                     data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
                                     Application Lifecycle Management
                                 </button>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Målet med kursen är att de studerande ska få kunskap om programmeringsprojekt och
                                     deras miljöer, hur projekten sätts upp, konfigureras och slutligen installeras
                                     (deployas) till olika testmiljöer. De studerande ska också få kunskap kring bygg-
@@ -478,7 +456,7 @@
                                     in i och förstå verkliga projektuppsättningar med miljöer och konfiguration för
                                     automation och kvalitetssäkring.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The aim of the course is to give the students knowledge about programming projects
                                     and their environments, how the projects are set up, configured and finally
                                     installed (deployed) to different test environments. The students will also gain
@@ -496,13 +474,14 @@
                                     data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
                                     LIA 2
                                 </button>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med LIA 2 är att de studerande ska få möjlighet att utveckla sina kunskaper
                                     och färdigheter inom webbutveckling/programmering för att nå en yrkesmässig nivå.
                                     Målet är att de med stor självständighet ska kunna utveckla webbapplikationer i en
@@ -510,7 +489,7 @@
                                     dem kompetensen att enligt branschstandard och enligt ett företags rutiner utveckla
                                     komplexa webbapplikationer och lösningar inom open sorce-baserad teknik.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The purpose of LIA 2 is to give students the opportunity to develop their knowledge
                                     and skills in web development / programming in order to reach a professional level.
                                     The goal is that they will be able to develop web applications with a high degree of
@@ -530,13 +509,14 @@
                                     <div lang="sv">Examensarbete</div>
                                     <div lang="en" class="d-none">Degree Project</div>
                                 </button>
-                                <img src="images/arrow-down.png" alt="chevron icon">
+                                <span class="badge badge-secondary" tabindex="0">Start TBD</span>
+                                <img src="images/arrow-down.png" alt="chevron icon" tabindex="0">
                             </h2>
                         </div>
                         <div id="collapseTwelve" class="collapse" aria-labelledby="headingTwelve"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                                <div lang="sv">
+                                <div lang="sv" tabindex="0">
                                     Syftet med examenskursen är att de studerande ska få omsätta sina kunskaper och
                                     färdigheter inom webbutveckling i för utbildningen relevanta tekniker på en nivå som
                                     motsvarar branschstandard. De studerande ska självständigt planera, utföra,
@@ -549,7 +529,7 @@
                                     branschstandard. För att säkerställa de studerandes förmåga att kommunicera på
                                     engelska kommer dokumentationen/rapporten att genomföras på engelska.
                                 </div>
-                                <div lang="en" class="d-none">
+                                <div lang="en" class="d-none" tabindex="0">
                                     The purpose of the degree course is to enable students to translate their knowledge
                                     and skills in web development into techniques relevant to the education at a level
                                     that corresponds to industry standards. The students must independently plan,
@@ -571,65 +551,65 @@
             <hr class="my-4">
 
             <div id="aso">
-                <h1 lang="sv" class="display-4">Åsö vuxengymnasium</h1>
-                <h1 lang="en" class="display-4 d-none">Åsö adult education</h1>
-                <p class="lead">2019</p>
+                <h1 lang="sv" class="display-4" tabindex="0">Åsö vuxengymnasium</h1>
+                <h1 lang="en" class="display-4 d-none" tabindex="0">Åsö adult education</h1>
+                <p class="lead" tabindex="0">2019</p>
                 <hr class="my-4">
-                <h2 lang="sv">Kurser</h2>
-                <h2 lang="en">Courses</h2>
+                <h2 lang="sv" tabindex="0">Kurser</h2>
+                <h2 lang="en" class="d-none" tabindex="0">Courses</h2>
                 <ul class="list-group">
-                    <li lang="sv" class="list-group-item">Programmering 1</li>
-                    <li lang="en" class="list-group-item d-none">Programming 1</li>
-                    <li lang="sv" class="list-group-item">Matematik 2c</li>
-                    <li lang="en" class="list-group-item d-none">Mathematics 2c</li>
-                    <li lang="sv" class="list-group-item">Matematik 3c</li>
-                    <li lang="en" class="list-group-item d-none">Mathematics 3c</li>
+                    <li lang="sv" class="list-group-item" tabindex="0">Programmering 1</li>
+                    <li lang="en" class="list-group-item d-none" tabindex="0">Programming 1</li>
+                    <li lang="sv" class="list-group-item" tabindex="0">Matematik 2c</li>
+                    <li lang="en" class="list-group-item d-none" tabindex="0">Mathematics 2c</li>
+                    <li lang="sv" class="list-group-item" tabindex="0">Matematik 3c</li>
+                    <li lang="en" class="list-group-item d-none" tabindex="0">Mathematics 3c</li>
                 </ul>
             </div>
 
             <hr class="my-4">
             <div id="rytmus">
-                <h1 class="display-4">Rytmus Gymnasium</h1>
-                <h1 lang="sv">Estetik och media - Medieproduktion</h1>
-                <h1 lang="en" class="d-none">Aesthetics and media - Media production</h1>
-                <p class="lead">2011 - 2015</p>
+                <h1 class="display-4" tabindex="0">Rytmus Gymnasium</h1>
+                <h1 lang="sv" tabindex="0">Estetik och media - Medieproduktion</h1>
+                <h1 lang="en" class="d-none" tabindex="0">Aesthetics and media - Media production</h1>
+                <p class="lead" tabindex="0">2011 - 2015</p>
             </div>
         </div>
 
         <div id="work-page" class="pages d-none">
-            <h1 class="display-4">PostNord</h1>
-            <h1 lang="sv">Terminalarbetare</h1>
-            <h1 lang="en" class="d-none">Terminal Worker</h1>
-            <p class="lead">2015 - 2018</p>
+            <h1 class="display-4" tabindex="0">PostNord</h1>
+            <h1 lang="sv" tabindex="0">Terminalarbetare</h1>
+            <h1 lang="en" class="d-none" tabindex="0">Terminal Worker</h1>
+            <p class="lead" tabindex="0">2015 - 2018</p>
             <hr class="my-4">
             <div lang="sv">
-                <h3>Arbetsuppgifter</h3>
+                <h3 tabindex="0">Arbetsuppgifter</h3>
                 <hr class="my-4">
-                <h4>Maskinoperatör</h4>
-                <p>Ansvarade för arbetsflödet runt några brevsorteringsmaskiner</p>
-                <h4>Videokodare</h4>
-                <p>Höll i några utbildningar och kvalitetskontroller för videokodningen</p>
-                <h4>Truckförare</h4>
+                <h4 tabindex="0">Maskinoperatör</h4>
+                <p tabindex="0">Ansvarade för arbetsflödet runt några brevsorteringsmaskiner</p>
+                <h4 tabindex="0">Videokodare</h4>
+                <p tabindex="0">Höll i några utbildningar och kvalitetskontroller för videokodningen</p>
+                <h4 tabindex="0">Truckförare</h4>
             </div>
             <div lang="en" class="d-none">
-                    <h3>Task Assignments</h3>
-                    <hr class="my-4">
-                    <h4>Machine Operator</h4>
-                    <p>Responsible for the workflow around some letter sorting machines</p>
-                    <h4>Video Coder</h4>
-                    <p>Held in some training and quality controls for the video coding</p>
-                    <h4>Truck Driver</h4>
-                </div>
+                <h3 tabindex="0">Task Assignments</h3>
+                <hr class="my-4">
+                <h4 tabindex="0">Machine Operator</h4>
+                <p tabindex="0">Responsible for the workflow around some letter sorting machines</p>
+                <h4 tabindex="0">Video Coder</h4>
+                <p tabindex="0">Held in some training and quality controls for the video coding</p>
+                <h4 tabindex="0">Truck Driver</h4>
+            </div>
         </div>
 
-        <div id="portfolio-page" class="pages">
+        <div id="portfolio-page" class="pages d-none">
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Quiz</h5>
-                            <p lang="sv" class="card-text">Uppgift i kursen JavaScript 1. En Quiz-applikation.</p>
-                            <p lang="en" class="card-text d-none">An assignment in JavaScript 1. A Quiz application.</p>
+                            <h5 class="card-title" tabindex="0">Quiz</h5>
+                            <p lang="sv" class="card-text" tabindex="0">Uppgift i kursen JavaScript 1. En Quiz-applikation.</p>
+                            <p lang="en" class="card-text d-none" tabindex="0">An assignment in JavaScript 1. A Quiz application.</p>
                             <a href="https://github.com/RickardPedersen/JS1-uppgift2-Rickard-Pedersen"
                                 class="btn btn-primary">GitHub repository</a>
                         </div>
@@ -638,9 +618,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">CRM</h5>
-                            <p lang="sv" class="card-text">Grupprojekt i kursen JavaScript 2. Ett CRM system.</p>
-                            <p lang="en" class="card-text d-none">Group project in JavaScript 2. A CRM system.</p>
+                            <h5 class="card-title" tabindex="0">CRM</h5>
+                            <p lang="sv" class="card-text" tabindex="0">Grupprojekt i kursen JavaScript 2. Ett CRM system.</p>
+                            <p lang="en" class="card-text d-none" tabindex="0">Group project in JavaScript 2. A CRM system.</p>
                             <a href="https://github.com/timbror/CRM-Grupp-K" class="btn btn-primary">GitHub
                                 repository</a>
                         </div>
@@ -650,9 +630,9 @@
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Online CV/portfolio</h5>
-                            <p lang="sv" class="card-text">Sidan du är på just nu! En SPA med bootstrap.</p>
-                            <p lang="en" class="card-text d-none">The site you are on right now! SPA with bootstrap.</p>
+                            <h5 class="card-title" tabindex="0">Online CV/portfolio</h5>
+                            <p lang="sv" class="card-text" tabindex="0">Sidan du är på just nu! En SPA med bootstrap.</p>
+                            <p lang="en" class="card-text d-none" tabindex="0">The site you are on right now! SPA with bootstrap.</p>
                             <a href="https://github.com/RickardPedersen/Online-CV-portfolio"
                                 class="btn btn-primary">GitHub repository</a>
                         </div>
@@ -663,8 +643,9 @@
         </div>
 
         <div id="contact-page" class="pages d-none">
-            <div id="contact-info">
-                <h1>Kontaktuppgifter</h1>
+            
+                <h1 lang="sv" tabindex="0">Kontaktuppgifter</h1>
+                <h1 lang="en" class="d-none" tabindex="0">Contact information</h1>
                 <a href="mailto:pedersen.rickard@outlook.com">pedersen.rickard@outlook.com</a>
                 <a href="tel:0722539595">072-253 95 95</a>
                 <hr class="my-4">
@@ -676,7 +657,7 @@
                         <img src="images/github-icon.png" alt="github icon">
                     </a>
                 </span>
-            </div>
+            
         </div>
 
     </div>

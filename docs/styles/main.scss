@@ -2,75 +2,67 @@
 
 $theme-colors: (
     "primary": #521751,
-    "dark": #212529
+    "dark": #212529,
+    "info": #0059ff,
+    "success": #188030
 );
 
 $navbar-dark-color: rgba(#fff, .75);
 $navbar-dark-hover-color: #fff;
-
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $body-bg: var(--dark);
 
-* {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+/*Navbar*/
+.navbar {
+    margin-bottom: 30px;
 
-body {
-    .navbar {
-        margin-bottom: 30px;
-    }
-}
-
-
-.language-dropdown {
-    color: rgba(#fff, .75);
-
-    :hover {
-        color: #fff;
-    }
-}
-
-.dropdown-menu {
-    :hover {
-        color: black;
-    }
-}
-
-
-#navbarNavAltMarkup {
-    float: right;
-}
-
-
-.accordion {
-    img {
+    #navbarNavAltMarkup {
         float: right;
-        transition: transform 250ms;
     }
 
+    .language-dropdown {
+        color: rgba(#fff, .75);
     
+        :hover {
+            color: #fff;
+        }
+    }
+
+    .dropdown-menu {
+        :hover {
+            color: black;
+        }
+    }
 }
 
-.flipImage {
-    transform: rotateX(180deg);
+/*Education page*/
+#education-page {
+    .accordion {
+        img {
+            float: right;
+            transition: transform 250ms;
+        }
+    
+        .flipImage {
+            transform: rotateX(180deg);
+        }
+    }
 }
 
-#contact-info {
+/*Contact page*/
+#contact-page {
     a {
         display: block;
     }
 
-    span > a {
+    span>a {
         display: initial;
-        
-        :hover {
-            filter: invert(30%); 
 
-       }
+        :hover {
+            filter: invert(30%);
+        }
     }
 }
 
-
-
+/*Importing all bootstrap*/
 @import "../node_modules/bootstrap/scss/bootstrap";
-
-
